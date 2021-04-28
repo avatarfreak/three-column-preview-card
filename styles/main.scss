@@ -1,0 +1,45 @@
+@import "./abstract/fonts";
+@import "./abstract/colors";
+@import "./abstract/viewport";
+$mobile: 375;
+$desktop: 1440;
+
+@include font-face(
+  "Big Shoulders Display",
+  "../fonts/Big_Shoulders_Display/BigShouldersDisplay-Bold",
+  700,
+  bold
+);
+
+@include font-face("Lexend Deca", "../fonts/Lexend_Deca/LexendDeca-Regular", 400, regular);
+
+/** Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  // color: hsl(228, 45%, 44%);
+  color: salmon;
+}
+html {
+  @include fluid-typography(15, 15, $mobile, $desktop);
+}
