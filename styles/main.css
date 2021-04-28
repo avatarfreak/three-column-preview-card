@@ -1,0 +1,136 @@
+/* Define the mixin */
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("../fonts/Big_Shoulders_Display/BigShouldersDisplay-Bold.ttf");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("../fonts/Lexend_Deca/LexendDeca-Regular.ttf");
+  font-weight: 400;
+  font-style: regular;
+}
+
+/** Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: salmon;
+}
+
+html {
+  font-size: calc( 15px + (15 - 15) * (100vw - 375px) / (1440 - 375));
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.666rem;
+  font-weight: 700;
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+
+button {
+  width: 9.666em;
+  height: 3.26em;
+  border-radius: 1.6em;
+  background: #f2f2f2;
+  border: 0;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fff;
+}
+
+/* mobile */
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 2em;
+}
+
+.container section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(2.666rem, auto) minmax(6.666rem, auto) minmax(9rem, auto) auto;
+      grid-template-rows: minmax(2.666rem, auto) minmax(6.666rem, auto) minmax(9rem, auto) auto;
+  padding: 2.666rem;
+}
+
+.container section > h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .sedans {
+  background: #e38826;
+  border-radius: 0.666rem 0.666rem 0 0;
+}
+
+.container .sedans__btn {
+  color: #e38826;
+}
+
+.container .suvs {
+  background: #006970;
+}
+
+.container .suvs__btn {
+  color: #006970;
+}
+
+.container .luxury {
+  background: #004241;
+  border-radius: 0 0 0.666rem 0.666rem;
+}
+
+.container .luxury__btn {
+  color: #004241;
+}
+/*# sourceMappingURL=main.css.map */

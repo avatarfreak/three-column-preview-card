@@ -43,3 +43,74 @@ p {
 html {
   @include fluid-typography(15, 15, $mobile, $desktop);
 }
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.666rem;
+  font-weight: 700;
+  color: $very-light-gray;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $transparent-white;
+  line-height: 1.5;
+}
+
+button {
+  width: 9.666em;
+  height: 3.26em;
+  border-radius: 1.6em;
+  background: $very-light-gray;
+  border: 0;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  &:hover {
+    background: #fff;
+  }
+}
+/* mobile */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2em;
+
+  section {
+    display: grid;
+    grid-template-rows: minmax(2.666rem, auto) minmax(6.666rem, auto) minmax(9rem, auto) auto;
+    padding: 2.666rem;
+
+    & > h1 {
+      align-self: center;
+    }
+  }
+
+  .sedans {
+    background: $bright-orange;
+    border-radius: 0.666rem 0.666rem 0 0;
+
+    &__btn {
+      color: $bright-orange;
+    }
+  }
+  .suvs {
+    background: $dark-cyan;
+    &__btn {
+      color: $dark-cyan;
+    }
+  }
+  .luxury {
+    background: $very-dark-cyan;
+    border-radius: 0 0 0.666rem 0.666rem;
+    &__btn {
+      color: $very-dark-cyan;
+    }
+  }
+}
