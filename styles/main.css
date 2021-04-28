@@ -133,4 +133,35 @@ button:hover {
 .container .luxury__btn {
   color: #004241;
 }
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+  }
+  .container section {
+    -ms-grid-rows: minmax(2.666rem, auto) minmax(6.666rem, auto) minmax(12rem, auto) 50px;
+        grid-template-rows: minmax(2.666rem, auto) minmax(6.666rem, auto) minmax(12rem, auto) 50px;
+  }
+  .container .sedans {
+    border-radius: 0.666rem 0 0 0.666rem;
+  }
+  .container .luxury {
+    border-radius: 0 0.666rem 0.666rem 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 21.33rem 19rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */

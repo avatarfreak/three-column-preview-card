@@ -114,3 +114,30 @@ button {
     }
   }
 }
+/* tablet */
+@include tablet {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+
+    section {
+      grid-template-rows: minmax(2.666rem, auto) minmax(6.666rem, auto) minmax(12rem, auto) 50px;
+    }
+    .sedans {
+      border-radius: 0.666rem 0 0 0.666rem;
+    }
+
+    .luxury {
+      border-radius: 0 0.666rem 0.666rem 0;
+    }
+  }
+}
+
+@include desktop {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 21.33rem 19rem;
+  }
+}
