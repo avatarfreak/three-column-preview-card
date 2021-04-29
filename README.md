@@ -45,8 +45,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/avatarfreak/three-column-preview-card.git)
-- Live Site URL: [Add live site URL here](https://github.com/avatarfreak/three-column-preview-card/)
+- Solution URL: [Add solution URL here](https://github.com/avatarfreak/three-column-preview-grid-card.git)
+- Live Site URL: [Add live site URL here](hhttps://avatarfreak.github.io/three-column-preview-grid-card/)
 
 ## My process
 
